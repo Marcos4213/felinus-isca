@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1B2B4A">
+  <title>Quiz · A Tigela que Hidrata | Felinus</title>
+  <meta name="description" content="6 perguntas sobre a água e a comida do seu gato. No final, o e-book grátis A Tigela que Hidrata, com 20 receitas caseiras.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <!--
+    Meta Pixel — placeholder. Descomente e troque PIXEL_ID antes de publicar.
+    O id também está em js/shared.js (FELINUS_CONFIG.PIXEL_ID).
+    Eventos já ligados no JavaScript, quando fbq existir:
+    - Lead: no envio do formulário (submitLead)
+    - ViewContent + InitiateCheckout: no clique do tripwire
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" alt=""
+    src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"></noscript>
+  -->
+</head>
+<body>
+  <a class="skip" href="#quiz-app">Ir para o conteúdo</a>
+  <header class="wrap topbar">
+    <p class="brand">
+      <span class="brand-mark" aria-hidden="true">F</span>
+      <span>Felinus <span class="brand-quiet">· Saúde Felina</span></span>
+    </p>
+  </header>
+  <main id="quiz-app" class="wrap quiz-shell">
+    <div class="progress" id="quiz-progress" hidden>
+      <div class="progress-top"><span id="progress-label">Pergunta 1 de 6</span></div>
+      <div class="progress-track" id="progress-bar" role="progressbar" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1" aria-label="Progresso do quiz">
+        <span class="progress-fill" id="progress-fill"></span>
+      </div>
+    </div>
+
+    <section id="quiz-intro" class="hero-grid">
+      <div>
+        <p class="kicker">Quiz gratuito · 6 perguntas</p>
+        <h1>Vamos ver como está a tigela do seu gato.</h1>
+        <p class="lede">6 perguntas curtas sobre a água e a comida dele. No final, o e-book grátis <strong>A Tigela que Hidrata</strong>: 20 receitas caseiras, por cima da ração que ele já come. Sem tempero, sem triturar, sem sachê caro.</p>
+        <button type="button" class="btn btn-primary btn-inline" id="quiz-start">Começar o quiz <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="hero-visual" data-book-preview>
+        <div class="book-wrap">
+        <div class="book-scene">
+          <div class="book" aria-hidden="true">
+            <div class="book-spine"><span>Felinus</span></div>
+            <div class="book-pages"></div>
+            <div class="book-board">
+              <div class="book-face cover-face is-on" data-label="Capa">
+                <p class="cover-brand">Felinus</p>
+                <p class="cover-kicker">E-book · 20 receitas</p>
+                <p class="cover-title">A Tigela que Hidrata</p>
+                <p class="cover-sub">20 receitas caseiras para o gato que bebe pouca água</p>
+                <svg class="bowl-svg" viewBox="0 0 200 110" aria-hidden="true">
+                  <ellipse cx="100" cy="78" rx="74" ry="18" fill="#0b3c3a"/>
+                  <path d="M30 68c10 26 34 36 70 36s60-10 70-36" fill="#f4efe6"/>
+                  <ellipse cx="100" cy="66" rx="68" ry="16" fill="#b7efe4"/>
+                  <ellipse cx="100" cy="66" rx="54" ry="11" fill="#5eead4"/>
+                  <ellipse cx="84" cy="64" rx="8" ry="4.5" fill="#f7f4ef"/>
+                  <ellipse cx="108" cy="68" rx="7" ry="4" fill="#e7d3a1"/>
+                  <ellipse cx="122" cy="62" rx="6" ry="3.5" fill="#fff"/>
+                  <path d="M48 62c18-8 36-8 54 0" stroke="#fff" stroke-opacity=".55" stroke-width="2" fill="none"/>
+                </svg>
+              </div>
+              <div class="book-face paper" data-label="Regras de ouro">
+                <p class="face-kicker">Antes da primeira receita</p>
+                <p class="face-title">As 6 regras de ouro</p>
+                <p>Zero tempero. Zero sal. Tudo cozido. Comece com 1 colher de chá.</p>
+              </div>
+              <div class="book-face paper" data-label="Receita 1">
+                <p class="face-kicker">Receita 1 · fácil</p>
+                <p class="face-title">Caldo Dourado de Coxa de Frango</p>
+                <p>A água do cozimento fica. Morna, por cima da ração.</p>
+              </div>
+              <div class="book-face paper" data-label="Dia 1">
+                <p class="face-kicker">Plano de 7 dias</p>
+                <p class="face-title">Uma colher. Uma refeição.</p>
+                <p>No dia 1, ofereça 1 colher de chá e observe.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <button type="button" class="book-next" aria-label="Folhear a prévia do e-book. Agora: Capa">Folhear a prévia</button>
+      </div>
+      <noscript>
+        <p>O quiz precisa de JavaScript. O mesmo e-book está na <a href="captura.html">página de captura</a>.</p>
+      </noscript>
+    </section>
+
+    <section id="quiz-questions" hidden></section>
+
+    <section id="quiz-result" hidden>
+      <div id="result-copy"></div>
+      <ul class="chips" id="result-chips" aria-label="O que você contou"></ul>
+      <form id="quiz-form" class="form-card" novalidate>
+        <input type="hidden" name="pagina" value="quiz">
+        <input type="hidden" name="q_agua" value="">
+        <input type="hidden" name="q_racao" value="">
+        <input type="hidden" name="q_seletivo" value="">
+        <input type="hidden" name="q_idade" value="">
+        <input type="hidden" name="q_casa" value="">
+        <input type="hidden" name="q_tempo" value="">
+        <label class="field">
+          <span>Seu primeiro nome</span>
+          <input name="nome" type="text" autocomplete="given-name" maxlength="80" placeholder="Como podemos te chamar?" required>
+        </label>
+        <p class="field-error" id="quiz-err-nome" data-error-for="nome" hidden></p>
+        <label class="field">
+          <span>Seu melhor e-mail</span>
+          <input name="email" type="email" autocomplete="email" inputmode="email" maxlength="120" placeholder="voce@email.com" required>
+        </label>
+        <p class="field-error" id="quiz-err-email" data-error-for="email" hidden></p>
+        <label class="field">
+          <span>Nome do seu gato</span>
+          <input name="nomeGato" type="text" maxlength="40" placeholder="Opcional" autocomplete="off">
+        </label>
+        <label class="consent">
+          <input name="consent" type="checkbox" value="sim">
+          <span>Aceito receber o e-book e conteúdos do Felinus por e-mail. <a href="https://saudefelina.org/privacidade" target="_blank" rel="noopener noreferrer">Política de Privacidade</a></span>
+        </label>
+        <p class="field-error" id="quiz-err-consent" data-error-for="consent" hidden></p>
+        <button class="btn btn-primary" type="submit">Quero as 20 receitas grátis <span aria-hidden="true">→</span></button>
+        <p class="micro">Enviamos o e-book para o seu e-mail na hora. Sem spam. Você pode sair da lista com 1 clique.</p>
+      </form>
+    </section>
+  </main>
+  <footer class="wrap footer">
+    <nav aria-label="Institucional">
+      <span>Felinus · Saúde Felina</span>
+      <a href="https://saudefelina.org/privacidade" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>
+      <a href="https://saudefelina.org/termos" target="_blank" rel="noopener noreferrer">Termos de Uso</a>
+    </nav>
+    <p>Conteúdo educativo. Não substitui avaliação veterinária.</p>
+  </footer>
+  <script src="js/shared.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1B2B4A">
+  <title>Suas receitas estão a caminho | Felinus</title>
+  <meta name="description" content="Suas 20 receitas já estão indo para o seu e-mail. Condição especial do app Felinus por R$37, acesso vitalício, por 48 horas.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    document.documentElement.classList.add("js");
+    document.documentElement.classList.add(/[?&]v=b(?:&|$)/i.test(location.search) ? "v-b" : "v-a");
+  </script>
+  <!--
+    Meta Pixel — placeholder. Descomente e troque PIXEL_ID antes de publicar.
+    O id também está em js/shared.js (FELINUS_CONFIG.PIXEL_ID).
+    Eventos já ligados no JavaScript, quando fbq existir:
+    - Lead: no envio do formulário (submitLead)
+    - ViewContent + InitiateCheckout: no clique do tripwire
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" alt=""
+    src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"></noscript>
+  -->
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <header class="wrap topbar">
+    <p class="brand">
+      <span class="brand-mark" aria-hidden="true">F</span>
+      <span>Felinus <span class="brand-quiet">· Saúde Felina</span></span>
+    </p>
+  </header>
+  <main id="conteudo" class="wrap">
+    <ol class="steps">
+      <li class="is-done"><span aria-hidden="true">✓</span> Cadastro feito</li>
+      <li class="is-done"><span aria-hidden="true">✓</span> E-book a caminho do seu e-mail</li>
+      <li class="is-now" aria-current="step">Passo 3: condição especial (só nesta página)</li>
+    </ol>
+
+    <section class="confirm">
+      <h1>Pronto, <span id="lead-name">tutora</span>! Suas 20 receitas já estão indo para o seu e-mail.</h1>
+      <p id="lead-email" hidden></p>
+      <p><em>Não chegou em 5 minutos? Olhe a aba Promoções ou o Spam e marque "não é spam".</em></p>
+      <p class="link-row">
+        <a class="link-quiet" data-config-href="LINK_PDF" data-utm-content="obrigado_pdf">Baixar o e-book agora</a>
+        <code class="placeholder-chip" data-chip-for="LINK_PDF">[LINK_PDF]</code>
+      </p>
+      <p class="marker">[CONFIRMAR: link do PDF]</p>
+    </section>
+
+    <section data-version="a" class="section">
+      <h2>Você já tem as receitas. Agora tenha a quantidade certa, a ordem certa e a certeza de que está funcionando.</h2>
+      <p class="lede">Por <strong>R$37, uma vez só</strong>, você tem acesso <strong>vitalício</strong> ao app Felinus, o mesmo que custa R$67 no site. Só para quem acabou de baixar o e-book, por 48 horas.</p>
+    </section>
+
+    <section data-version="b" class="section">
+      <h2>Não deixe as receitas virarem só mais um PDF esquecido no celular.</h2>
+      <p class="marker">[CONFIRMAR: retirar "a maioria" se não houver dado → usar: "Receita salva no celular é fácil de esquecer"]</p>
+      <p class="lede">Receita salva no celular é fácil de esquecer. Sem saber quanto oferecer e em que ordem, a tutora tenta duas vezes, o gato recusa e tudo volta para a ração seca. Por <strong>R$37</strong> (em vez de R$67), o app Felinus faz isso não acontecer com você. <strong>Só nas próximas 48 horas.</strong></p>
+    </section>
+
+    <section class="section" aria-labelledby="timer-title">
+      <h2 id="timer-title" class="kicker" data-version="a">Esta condição fica disponível por</h2>
+      <h2 id="timer-title-b" class="kicker" data-version="b">Você perde esta condição em</h2>
+      <div id="offer-live">
+        <div class="clock" id="clock" role="timer">
+          <span><b id="hh">48</b><small>horas</small></span>
+          <span><b id="mm">00</b><small>min</small></span>
+          <span><b id="ss">00</b><small>seg</small></span>
+        </div>
+      </div>
+      <p id="offer-expired" hidden><strong>Esta condição de 48 horas encerrou.</strong> O acesso vitalício volta para R$67, o preço do site.</p>
+      <p class="marker">[CONFIRMAR: timer real por lead (48h a partir do cadastro). Não use timer que reinicia a cada visita nem "vagas" falsas]</p>
+    </section>
+
+    <section data-version="a" class="section">
+      <h2>Vídeo curto do app</h2>
+      <div class="video-frame">
+        <p>Tela do app: criar o perfil do gato, Calculadora, Início com a meta do dia.</p>
+        <p class="marker">[CONFIRMAR: gravar]</p>
+      </div>
+    </section>
+
+    <section data-version="a" class="section">
+      <h2>O que muda quando você sai do PDF e vai para o app</h2>
+      <div class="table-scroll">
+        <table class="compare">
+          <thead>
+            <tr><th>Só com o e-book</th><th>Com o app Felinus</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>20 receitas</td>
+              <td><strong>20 + 46 receitas</strong>
+                <span class="marker">[CONFIRMAR: as 20 do e-book estão no app? Se não, diga "+46 receitas no app"]</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Você estima a quantidade</td>
+              <td><strong>A Calculadora diz quanto</strong>, pelo peso, idade e perfil dele (diretriz AAFP/ISFM)</td>
+            </tr>
+            <tr>
+              <td>Um plano de 7 dias</td>
+              <td><strong>Método de 14 dias</strong>, com a ordem de adaptação e estratégias para seletivo</td>
+            </tr>
+            <tr>
+              <td>Você lembra de cabeça</td>
+              <td><strong>Início</strong>: meta do dia de cada gato, você marca e acompanha</td>
+            </tr>
+            <tr>
+              <td>Você sozinha</td>
+              <td><strong>Comunidade</strong> de tutoras + suporte
+                <span class="marker">[CONFIRMAR: "especialistas 24/7"]</span>
+              </td>
+            </tr>
+            <tr>
+              <td>1 gato por vez</td>
+              <td><strong>Todos os gatos da casa</strong> no mesmo acesso</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>O que entra com o app</h3>
+      <ul class="check-list">
+        <li class="check-item"><strong>Sai o "será que é muito ou pouco?"</strong>: a calculadora faz a conta por você.</li>
+        <li class="check-item"><strong>Sai a recusa por novidade demais</strong>: o método mostra o que oferecer em cada dia.</li>
+        <li class="check-item"><strong>Entra a tranquilidade de abrir o celular e ver</strong> que a tigela de hoje está no caminho.</li>
+        <li class="check-item"><strong>2 minutos por dia</strong>, com o que você já tem em casa.</li>
+        <li class="check-item"><strong>Você vira a tutora que cuida antes do susto</strong>, e não depois.</li>
+      </ul>
+    </section>
+
+    <section data-version="b" class="section">
+      <h2>O que você arrisca ficando só com o PDF</h2>
+      <ul class="plain-list loss-list">
+        <li class="plain-item"><strong>Errar a quantidade</strong>: pouco demais não faz diferença, muito de uma vez pode causar recusa ou estômago irritado.</li>
+        <li class="plain-item"><strong>Queimar a adaptação</strong>: novidade demais de uma vez e ele passa a desconfiar até da ração de sempre.</li>
+        <li class="plain-item"><strong>Continuar gastando com sachê que ele recusa.</strong>
+          <span class="marker">[Se confirmado: "a maioria das tutoras gasta R$80 a R$180 por mês com sachê e comida úmida", CONFIRMAR: fonte]</span>
+        </li>
+        <li class="plain-item"><strong>Seguir com a dúvida "será que está tudo bem?"</strong> todos os dias, sem um jeito de saber se a tigela rendeu.</li>
+      </ul>
+      <h3>O que a hidratação baixa pode custar</h3>
+      <p class="marker">[CONFIRMAR: o site cita "Se virar emergência: R$150 a R$3.000 (consulta + exames + internação)". Só use com fonte ou cotação real. Mesmo com fonte, mantenha o tom sóbrio: sem "seu gato vai ter insuficiência renal".]</p>
+      <p><strong>Texto sugerido (com dado confirmado):</strong> Uma emergência urinária pode custar de R$150 a R$3.000 entre consulta, exames e internação. O app custa R$37, uma vez.</p>
+      <p><strong>Texto sugerido (sem dado):</strong> Qualquer ida de emergência ao veterinário custa mais do que o app. E o susto custa ainda mais.</p>
+      <div class="table-scroll">
+        <table class="cost-table">
+          <thead>
+            <tr><th></th><th>Custo</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sachês que ele recusa (mês)</td>
+              <td>R$80–180 <span class="marker">[CONFIRMAR]</span></td>
+            </tr>
+            <tr>
+              <td>Emergência urinária</td>
+              <td>R$150–3.000 <span class="marker">[CONFIRMAR]</span></td>
+            </tr>
+            <tr>
+              <td><strong>App Felinus, vitalício</strong></td>
+              <td><strong>R$37, uma vez (só nas próximas 48h)</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Quem já usa o Felinus</h2>
+      <p class="marker">[CONFIRMAR: % de tutoras que têm mais resultado usando o app vs. só receitas. O Marcos citou "75–80%". Não publicar sem fonte. Sem dado, use: "É por isso que a maioria das tutoras do Felinus usa o app todos os dias, e não só as receitas." E só use essa frase se for verdade, segundo os dados de uso do app.]</p>
+      <div class="quotes">
+        <blockquote class="quote">
+          <p>"Depois que a veterinária falou da importância da hidratação, eu fiquei obcecada. Pesquisava em todo lugar e só ficava mais ansiosa. O Felinus me deu um passo a passo claro."</p>
+          <footer>Mariana S., tutora do Francisquin <span class="marker">[CONFIRMAR]</span></footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>"Meu gato era tão seletivo que eu tinha medo de errar. A calculadora me deu a confiança que faltava."</p>
+          <footer>Renata B., Belo Horizonte/MG, tutora da Nina <span class="marker">[CONFIRMAR]</span></footer>
+        </blockquote>
+      </div>
+      <p class="proof-line">+7.300 tutoras · 4,9 <span class="marker">[CONFIRMAR ambos]</span></p>
+    </section>
+
+    <section class="section">
+      <article class="offer-card">
+        <p class="kicker">App Felinus · Acesso vitalício</p>
+        <ul class="plain-list">
+          <li class="plain-item">5 módulos: Início, Calculadora, Receitas, Método, Comunidade</li>
+          <li class="plain-item">Suporte incluso <span class="marker">[CONFIRMAR: escopo]</span></li>
+          <li class="plain-item">Todos os seus gatos no mesmo acesso</li>
+          <li class="plain-item">Funciona no navegador do celular ou computador, instala na tela inicial, sem loja de apps</li>
+          <li class="plain-item"><strong>Sem mensalidade. Paga uma vez, usa para sempre.</strong></li>
+        </ul>
+        <p class="price">
+          <s id="price-was">R$67</s>
+          <strong id="price-now">R$37</strong>
+          <span>pagamento único</span>
+        </p>
+        <p class="marker">[CONFIRMAR: parcelamento disponível em R$37 na Lastlink; se houver, mostrar "ou 12x de R$__"]</p>
+        <p class="marker">[CONFIRMAR: parcelamento]</p>
+        <p class="marker">[CONFIRMAR: criar checkout/cupom de R$37 na Lastlink → [LINK_CHECKOUT_37]]</p>
+        <p data-version="b"><strong>Depois das 48h, o preço volta para R$67.</strong></p>
+        <p id="after-note" hidden><strong>O preço nesta página voltou para R$67.</strong></p>
+        <p class="link-row" style="align-items:center">
+          <a class="btn btn-primary" data-tripwire data-config-href="LINK_CHECKOUT_37" data-value="37" data-utm-content="tripwire_37" data-version="a">
+            <span class="btn-label">Sim, quero o app por R$37</span> <span aria-hidden="true">→</span>
+          </a>
+          <a class="btn btn-primary" data-tripwire data-config-href="LINK_CHECKOUT_37" data-value="37" data-utm-content="tripwire_37_b" data-version="b">
+            <span class="btn-label">Garantir meu acesso por R$37 antes que expire</span> <span aria-hidden="true">→</span>
+          </a>
+          <code class="placeholder-chip" data-chip-for="LINK_CHECKOUT_37">[LINK_CHECKOUT_37]</code>
+        </p>
+        <div class="guarantee" data-version="a">
+          <h3>14 dias para testar.</h3>
+          <p>Use a calculadora, as receitas e o método. Se não fizer sentido para você e para o seu gato, devolvemos 100%, sem perguntas.</p>
+        </div>
+        <div class="guarantee" data-version="b">
+          <h3>O risco é nosso, não seu.</h3>
+          <p>14 dias para testar. Se não gostar, 100% de volta.</p>
+        </div>
+        <p class="marker">[CONFIRMAR: garantia de 14 dias vale para esta oferta]</p>
+      </article>
+      <p class="decline">
+        <a data-version="a" href="#so-o-ebook">Não, obrigada. Vou ficar só com o e-book gratuito.</a>
+        <a data-version="b" href="#so-o-ebook">Prefiro perder o desconto e ficar só com o e-book.</a>
+      </p>
+    </section>
+
+    <section id="so-o-ebook" tabindex="-1" class="section">
+      <h2>O e-book gratuito continua seu.</h2>
+      <p>Você fica só com as 20 receitas. Sem problema.</p>
+      <p class="link-row">
+        <a class="link-quiet" data-config-href="LINK_PDF" data-utm-content="obrigado_pdf_recusa">Baixar o e-book agora</a>
+        <code class="placeholder-chip" data-chip-for="LINK_PDF">[LINK_PDF]</code>
+      </p>
+    </section>
+  </main>
+  <footer class="wrap footer">
+    <nav aria-label="Institucional">
+      <span>Felinus · Saúde Felina</span>
+      <a href="https://saudefelina.org/privacidade" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>
+      <a href="https://saudefelina.org/termos" target="_blank" rel="noopener noreferrer">Termos de Uso</a>
+    </nav>
+    <p>Conteúdo educativo. Não substitui avaliação veterinária.</p>
+  </footer>
+  <script src="js/shared.js" defer></script>
+  <script src="js/obrigado.js" defer></script>
+</body>
+</html>

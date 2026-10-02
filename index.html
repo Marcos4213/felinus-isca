@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1B2B4A">
+  <title>Felinus · revisão da isca</title>
+  <meta name="description" content="Hub interno da isca A Tigela que Hidrata: quiz, captura estática e página de obrigado com tripwire.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <!--
+    Meta Pixel — placeholder. Descomente e troque PIXEL_ID antes de publicar.
+    O id também está em js/shared.js (FELINUS_CONFIG.PIXEL_ID).
+    Eventos já ligados no JavaScript, quando fbq existir:
+    - Lead: no envio do formulário (submitLead)
+    - ViewContent + InitiateCheckout: no clique do tripwire
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" alt=""
+    src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"></noscript>
+  -->
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <header class="wrap topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">F</span>
+      <span>Felinus <span class="brand-quiet">· Saúde Felina</span></span>
+    </a>
+  </header>
+  <main id="conteudo" class="wrap">
+    <p class="kicker">Revisão interna</p>
+    <h1>Isca digital, pronta para olhar no celular.</h1>
+    <p class="lede">Quatro páginas estáticas, em português, com a copy aprovada. Os selos amarelos são pontos <strong>[CONFIRMAR]</strong>. Nada de número inventado.</p>
+    <div class="hub-grid">
+      <a class="hub-card" href="quiz.html">
+        <strong>Quiz</strong>
+        <span>Captura principal. 6 perguntas sobre água, ração, seletivo, idade e tempo. O resultado abre o formulário.</span>
+      </a>
+      <a class="hub-card" href="captura.html">
+        <strong>Captura estática</strong>
+        <span>A mesma oferta, sem quiz, para comparar com o anúncio.</span>
+      </a>
+      <a class="hub-card" href="obrigado.html">
+        <strong>Obrigado · versão A</strong>
+        <span>Ganho. Tripwire de R$37, acesso vitalício, contador real de 48h.</span>
+      </a>
+      <a class="hub-card" href="obrigado.html?v=b">
+        <strong>Obrigado · versão B</strong>
+        <span>Perda, no desconto e no esforço. Mesma oferta, outro enquadramento.</span>
+      </a>
+    </div>
+
+    <section class="section">
+      <h2>Como o timer funciona</h2>
+      <p>A primeira visita a <code>obrigado.html</code> neste navegador grava o horário e conta 48 horas para trás. Voltar à página não zera o relógio. Links de checkout e do PDF saem de <code>FELINUS_CONFIG</code>, no topo de <code>js/shared.js</code>.</p>
+      <p class="marker">[CONFIRMAR com teste] Preço do tripwire sugerido: R$37, pagamento único, vitalício. Abaixo de R$50 é prática comum de tripwire, não um dado medido.</p>
+      <p class="marker">[CONFIRMAR: criar na Lastlink uma oferta/checkout de R$37 (ou cupom) e conferir se aceita parcelamento e garantia de 14 dias igual ao produto principal]</p>
+    </section>
+
+    <section class="section review-note">
+      <h2>Lista mestre para confirmar</h2>
+      <p>Itens da estratégia. Enquanto o selo estiver aqui, o número não entra como fato publicado sem a fonte.</p>
+      <ul class="checklist">
+        <li class="marker">[CONFIRMAR] % de tutoras com mais resultado usando o app ("75–80%" citado). Sem fonte encontrada.</li>
+        <li class="marker">[CONFIRMAR] "+7.300 tutoras" (número e definição: compradoras? cadastros?).</li>
+        <li class="marker">[CONFIRMAR] "4,9 ★" (origem e quantidade de avaliações).</li>
+        <li class="marker">[CONFIRMAR] "92% dos gatos aceitam a primeira receita em uma semana" (fonte).</li>
+        <li class="marker">[CONFIRMAR] "R$80 a R$180/mês com sachês" e "R$1.000 a R$2.000/ano" (fonte).</li>
+        <li class="marker">[CONFIRMAR] "Emergência R$150 a R$3.000" (fonte ou cotação).</li>
+        <li class="marker">[CONFIRMAR] Depoimentos do site: reais e com autorização para usar em e-mail e na página de obrigado?</li>
+        <li class="marker">[CONFIRMAR] Preço "de" R$197: chegou a ser praticado de verdade?</li>
+        <li class="marker">[CONFIRMAR] Contador "100 vagas / 13 restantes": real ou estático?</li>
+        <li class="marker">[CONFIRMAR] Suporte "especialistas 24/7": real? Quem atende?</li>
+        <li class="marker">[CONFIRMAR] Oferta/checkout R$37 na Lastlink (link, parcelamento, garantia de 14 dias).</li>
+        <li class="marker">[CONFIRMAR] Revisão veterinária do e-book (nome + CRMV para a página de créditos).</li>
+        <li class="marker">[CONFIRMAR] "Funciona offline depois de instalado" (o site afirma; testar).</li>
+        <li class="marker">[CONFIRMAR] Link de download do PDF (hospedagem: R2/Cloudflare, Brevo ou Drive).</li>
+        <li class="marker">[CONFIRMAR] Política de privacidade/LGPD no formulário (o link existe no site; conferir se cobre e-mail marketing).</li>
+        <li class="marker">[CONFIRMAR: a integração Lastlink → Brevo já existe?]</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="wrap footer">
+    <nav aria-label="Institucional">
+      <a href="https://saudefelina.org/">saudefelina.org</a>
+      <a href="https://saudefelina.org/privacidade">Política de Privacidade</a>
+      <a href="https://saudefelina.org/termos">Termos de Uso</a>
+    </nav>
+    <p>Felinus · Saúde Felina. Conteúdo educativo. Não substitui avaliação veterinária.</p>
+  </footer>
+  <script src="js/shared.js" defer></script>
+</body>
+</html>
